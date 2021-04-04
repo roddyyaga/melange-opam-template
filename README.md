@@ -1,29 +1,19 @@
-# melange-basic-template
+# melange-opam-template
 
-A simple project template using [Melange](https://github.com/melange-re/melange).
+A simple project template using [Melange](https://github.com/melange-re/melange) installed with opam.
 
 ## Getting started
+Requirements:
+- [opam](https://opam.ocaml.org/doc/Install.html)
+- [node](https://nodejs.org/)
 
-You will need [esy](https://esy.sh) package manager to obtain OCaml and Melange sources. See `esy` installation instructions [here](https://esy.sh/docs/en/getting-started.html#install-esy).
+Run `./install.sh` to:
+- Create an opam switch
+- Install dependencies
+- Create a `node_modules` directory with necessary files linked in
 
-Once `esy` is available, run
-
-```bash
-esy
+Then do:
 ```
-
-to install all dependencies.
-
-Then:
-
-```bash
-esy build
+$ bsb -make-world
+$ node _build/default/src/main.bs.js
 ```
-
-to build the project. Now you should see a `_build` folder with all generated files, you can run
-
-```bash
-esy x node _build/default/src/Main.bs.js
-```
-
-To see the result of the script running.
