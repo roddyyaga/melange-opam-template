@@ -1,17 +1,1 @@
-{
-    "$schema": "https://raw.githubusercontent.com/rescript-lang/rescript-compiler/master/docs/docson/build-schema.json",
-    "name": "melange-basic-project",
-    "version": "0.0.1",
-    "sources": {
-      "dir" : "src"
-    },
-    "package-specs": {
-      "module": "commonjs"
-    },
-    "suffix": ".bs.js",
-    "bs-dependencies": [
-    ],
-    "warnings": {
-      "error" : "+101"
-    },
-  }
+parse error: Expected another key-value pair at line 17, column 3
